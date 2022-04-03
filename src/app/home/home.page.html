@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button *ngIf="promptEvent" (click)="onInstall()">Install</ion-button>
+    <ion-title>
+      Botanic Ionic Project
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+<!--        Avant l'utilisation du menu déroulant via openMenu(),
+            je choisissais le menu 'first' ou 'second' dans ngOnInit() -->
+<!--    <ion-buttons slot="end">-->
+<!--      <ion-menu-button></ion-menu-button>-->
+<!--    </ion-buttons>-->
+
+    <ion-buttons slot="end">
+      <ion-button (click)="openMenu($event)">
+        <ion-icon slot="icon-only"
+                  ios="ellipsis-horizontal"
+                  md="ellipsis-vertical">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Botanic Ionic Project</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Welcome on my botanic app ! New plants and flowers arrive
+      frequently so let curiosity guide you !</strong>
+  </div>
+  <ion-button (click)="onPlantsPage()" color="secondary">
+    <ion-icon name="leaf" size="2x"></ion-icon>
+    <span>Plants</span>
+  </ion-button>
+  <ion-button (click)="onAccessoriesPage()" color="secondary">
+    <ion-icon name="build" size="2x"></ion-icon>
+    <span>Accessories</span>
+  </ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <span>Etienne URBANO - 15.03.2022</span>
+    <div class="container">
+      <ion-button (click)="openAlert()" color="secondary">send alert</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

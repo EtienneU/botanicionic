@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>List of plants</h2>
+
+  <ion-searchbar placeholder="Search..." animated="true"
+                 [(ngModel)]="filterTerm"
+                 (ionChange)="filterPlantList()">
+  </ion-searchbar>
+
+  <!--  Avant de passer par une Page indépendante, on passait par un composant avec @Output() onaddplant : -->
+  <!--  <app-add-plant (onaddplant)="addplant($event)"></app-add-plant>-->
+  <ion-button (click)="onAddPlantPage()" color="success">
+    <ion-icon name="add"></ion-icon>
+    <span>Add a plant</span>
+  </ion-button>
+
+  <ion-list inset="true">
+    <ion-item *ngFor="let plant of plantList">
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{plant.name}}</ion-card-title>
+          <ion-card-subtitle>Seller: {{plant.sellerAlias}}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{plant.likes}} likes
+        </ion-card-content>
+
+        <ion-card-content>
+          {{plant.stockNumber}} in stock
+        </ion-card-content>
+
+        <ion-card-content size="2">
+          <ion-button (click)="onEditPage(plant)" color="secondary" >
+            <ion-icon name="create" size="2x"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onDelete(plant)" color="secondary">
+            <ion-icon name="trash" size="2x"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onLike(plant)" color="secondary" >
+            <ion-icon name="heart" size="2x"></ion-icon>
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="onHomePage()" color="success">
+    <ion-icon name="home" size="2x"></ion-icon>
+    <span>Home page</span>
+  </ion-button>
+
+</ion-content>

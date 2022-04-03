@@ -1,0 +1,7 @@
+<ion-content>
+  <ion-label>Menu {{myprop}}</ion-label>
+  <ion-list>
+<!--    On appelle la fonction qui renvoie l'item sur lequel on clique-->
+    <ion-item *ngFor="let elt of items" (click)="closePopover(elt)">{{elt}}</ion-item>
+  </ion-list>
+</ion-content>

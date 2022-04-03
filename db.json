@@ -1,0 +1,76 @@
+{
+  "plants": [
+    {
+      "id": 4,
+      "name": "Begonia",
+      "likes": 54,
+      "stockNumber": 28,
+      "sellerAlias": "AlexandraB"
+    },
+    {
+      "id": 5,
+      "name": "Albizia",
+      "likes": 32,
+      "stockNumber": 12,
+      "sellerAlias": "John"
+    },
+    {
+      "id": 6,
+      "name": "Ficus",
+      "likes": 47,
+      "stockNumber": 12,
+      "sellerAlias": "SophieR"
+    },
+    {
+      "id": 7,
+      "name": "Houx",
+      "likes": 20,
+      "stockNumber": 6,
+      "sellerAlias": "Greg"
+    },
+    {
+      "id": 8,
+      "name": "Amaryllis",
+      "likes": 29,
+      "stockNumber": 2,
+      "sellerAlias": "CathyH"
+    },
+    {
+      "id": 9,
+      "name": "Aloe Vera",
+      "likes": 57,
+      "stockNumber": 51,
+      "sellerAlias": "DorianP"
+    },
+    {
+      "id": 10,
+      "name": "Monstera",
+      "likes": 64,
+      "stockNumber": 24,
+      "sellerAlias": "JanineR"
+    }
+  ],
+  "accessories": [
+    {
+      "id": 4,
+      "name": "Seal",
+      "likes": 12,
+      "stockNumber": 45,
+      "sellerAlias": "AlexandraB"
+    },
+    {
+      "id": 5,
+      "name": "Compost sack",
+      "likes": 65,
+      "stockNumber": 12,
+      "sellerAlias": "John"
+    },
+    {
+      "id": 6,
+      "name": "Terra cotta pot",
+      "likes": 35,
+      "stockNumber": 422,
+      "sellerAlias": "SophieR"
+    }
+  ]
+}
