@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MenuController} from '@ionic/angular';
 import {ModelAccessory} from '../../models/model-accessory';
 import {ApiAccessoriesService} from '../../services/api-accessories.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-accessories',
@@ -19,6 +20,7 @@ export class AccessoriesPage implements OnInit {
   constructor(
     private menu: MenuController,
     private serviceAccessories: ApiAccessoriesService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -36,4 +38,7 @@ export class AccessoriesPage implements OnInit {
     this.menu.close();
   }
 
+  onHomePage() {
+    this.router.navigate(['/home']);
+  }
 }

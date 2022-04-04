@@ -20,17 +20,22 @@
       <ion-card>
         <ion-card-header>
           <ion-card-title>{{acc.name}}</ion-card-title>
-          <ion-card-subtitle>id {{acc.id}}</ion-card-subtitle>
+          <ion-card-subtitle>Seller {{acc.sellerAlias}}</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
           {{acc.likes}} likes
         </ion-card-content>
+
+        <ion-card-content>
+          {{acc.stockNumber}} in stock
+        </ion-card-content>
       </ion-card>
     </ion-item>
   </ion-list>
 
-  <p>
-    <a routerLink='/home'> Home page</a>
-  </p>
+  <ion-button (click)="onHomePage()" color="success">
+    <ion-icon id="home" name="home" size="2x"></ion-icon>
+    <span>Home page</span>
+  </ion-button>
 </ion-content>
