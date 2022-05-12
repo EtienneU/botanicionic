@@ -24,3 +24,5 @@ Pour créer de nouveaux composants métier (entités) ou services, lancer :
 
 Ce projet a été généré grâce à la commande :
 - ionic start botanicionic     --> lancée depuis terminal CMD et non GitBash car ce dernier ne supporte pas l'interactif
+
+
