@@ -1,5 +1,5 @@
 # botanicionic
-Application Ionic
+Application Ionic TypeScript
 Etienne URBANO - Mars 2022
 
 Pour lancer l'application, se placer dans le répertoire racine et lancer les commandes :
