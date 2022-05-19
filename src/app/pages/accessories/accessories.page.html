@@ -14,6 +14,16 @@
 <ion-content>
   <h2>List of accessories</h2>
 
+<!--  <ion-searchbar placeholder="Search..." animated="true"-->
+<!--                 [(ngModel)]="filterTerm"-->
+<!--                 (ionChange)="filterPlantList()">-->
+<!--  </ion-searchbar>-->
+
+  <ion-button (click)="onAddAccessoryPage()" color="success">
+    <ion-icon name="add"></ion-icon>
+    <span>Add an accessory</span>
+  </ion-button>
+
   <ion-list inset="true">
     <ion-item *ngFor="let acc of accessoryList">
 

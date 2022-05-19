@@ -11,9 +11,6 @@ import {Router} from '@angular/router';
 })
 export class AccessoriesPage implements OnInit {
 
-  // public accessoryList = [
-  //   { name: 'Seal', likes: 12, id: 58744 }
-  //   ];
   public accessoryList!: ModelAccessory[];
   public accessory!: ModelAccessory;
 
@@ -36,6 +33,10 @@ export class AccessoriesPage implements OnInit {
 
   ionViewWillLeave() {
     this.menu.close();
+  }
+
+  onAddAccessoryPage(): void {
+    this.router.navigate(['/addaccessory']);
   }
 
   onHomePage() {

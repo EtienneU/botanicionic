@@ -48,6 +48,13 @@
       "likes": 64,
       "stockNumber": 24,
       "sellerAlias": "JanineR"
+    },
+    {
+      "id": 11,
+      "name": "Monstera",
+      "likes": 7,
+      "stockNumber": 45,
+      "sellerAlias": "EtienneAnt"
     }
   ],
   "accessories": [
@@ -71,6 +78,20 @@
       "likes": 35,
       "stockNumber": 422,
       "sellerAlias": "SophieR"
+    },
+    {
+      "id": 7,
+      "name": "lohjml",
+      "likes": 0,
+      "stockNumber": 365,
+      "sellerAlias": "jopimpi"
+    },
+    {
+      "id": 8,
+      "name": "gfrrdhytjfytfdh",
+      "likes": 0,
+      "stockNumber": 444,
+      "sellerAlias": "kj"
     }
   ]
 }

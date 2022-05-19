@@ -34,10 +34,11 @@ export class PlantsPage implements OnInit {
     this.plant = new ModelPlant();
   }
 
-  addplant(p: ModelPlant) {
-    this.plantList.push({...p});
-    console.log('on Add plant :', p);
-  }
+  // Méthode d'ajout directe avant de passer par le composant addplant
+  // addplant(p: ModelPlant) {
+  //   this.plantList.push({...p});
+  //   console.log('on Add plant :', p);
+  // }
 
   onAddPlantPage(): void {
     this.router.navigate(['/addplant']);

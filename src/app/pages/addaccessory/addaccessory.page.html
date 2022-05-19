@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Adding a plant</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="addAccessoryForm" (ngSubmit)="onSubmit()" novalidate>
+    <ion-item>
+      <ion-label>Accessory name</ion-label>
+      <ion-input placeholder="'Amaryllis'" formControlName="accessoryName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Stock number</ion-label>
+      <ion-input formControlName="stockNumber" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Seller</ion-label>
+      <ion-input placeholder="'JohnMcKyn'" formControlName="sellerAlias"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color="success">
+      <ion-icon name="add" size="2x"></ion-icon>
+      <span>Add this accessory</span>
+    </ion-button>
+    <ion-button (click)="onCancel()" color="light">Cancel</ion-button>
+  </form>
+
+</ion-content>

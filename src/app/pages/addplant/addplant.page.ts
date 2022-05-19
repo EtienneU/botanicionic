@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ApiPlantsService} from '../../services/api-plants.service';
-import {ActivatedRoute, Router} from '@angular/router';
+import {Router} from '@angular/router';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {ModelPlant} from '../../models/model-plant';
 import {AlertController} from '@ionic/angular';
@@ -56,11 +56,13 @@ export class AddplantPage implements OnInit {
       p.stockNumber = this.stockNumberCtrl.value;
       p.sellerAlias = this.sellerAliasCtrl.value;
 
+      // Si c'est un edit d'une plante existante
       if (this.planttochange) {
         p.id = this.planttochange.id;
         this.service.update(p).subscribe( () => {
           this.router.navigate(['/plants']);
         });
+      // Sinon, c'est un ajout d'une nouvelle plante
       } else {
         this.service.add(p).subscribe( () => {
           this.router.navigate(['/plants']);
@@ -74,7 +76,7 @@ export class AddplantPage implements OnInit {
   async invalidInputAlert() {
     const invalidMessage = 'One input entered or more is not valid';
     const alert = await this.alertController.create({
-      header: 'Alert Box',
+      header: 'Invalid data entered',
       message: invalidMessage,
       buttons: ['OK'],
     });
