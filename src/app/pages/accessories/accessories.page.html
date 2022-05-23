@@ -14,10 +14,10 @@
 <ion-content>
   <h2>List of accessories</h2>
 
-<!--  <ion-searchbar placeholder="Search..." animated="true"-->
-<!--                 [(ngModel)]="filterTerm"-->
-<!--                 (ionChange)="filterPlantList()">-->
-<!--  </ion-searchbar>-->
+  <ion-searchbar placeholder="Search..." animated="true"
+                 [(ngModel)]="filterTerm"
+                 (ionChange)="filterAccessoryList()">
+  </ion-searchbar>
 
   <ion-button (click)="onAddAccessoryPage()" color="success">
     <ion-icon name="add"></ion-icon>
@@ -39,6 +39,18 @@
 
         <ion-card-content>
           {{acc.stockNumber}} in stock
+        </ion-card-content>
+
+        <ion-card-content size="2">
+          <ion-button (click)="onEditPage(acc)" color="secondary" >
+            <ion-icon name="create" size="2x"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onDelete(acc)" color="secondary">
+            <ion-icon name="trash" size="2x"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onLike(acc)" color="secondary" >
+            <ion-icon name="heart" size="2x"></ion-icon>
+          </ion-button>
         </ion-card-content>
       </ion-card>
     </ion-item>

@@ -10,7 +10,7 @@
     {
       "id": 5,
       "name": "Albizia",
-      "likes": 32,
+      "likes": 33,
       "stockNumber": 12,
       "sellerAlias": "John"
     },
@@ -38,16 +38,9 @@
     {
       "id": 9,
       "name": "Aloe Vera",
-      "likes": 57,
+      "likes": 58,
       "stockNumber": 51,
       "sellerAlias": "DorianP"
-    },
-    {
-      "id": 10,
-      "name": "Monstera",
-      "likes": 64,
-      "stockNumber": 24,
-      "sellerAlias": "JanineR"
     },
     {
       "id": 11,
@@ -61,9 +54,9 @@
     {
       "id": 4,
       "name": "Seal",
-      "likes": 12,
+      "likes": 0,
       "stockNumber": 45,
-      "sellerAlias": "AlexandraB"
+      "sellerAlias": "AlexandraT"
     },
     {
       "id": 5,
@@ -83,15 +76,8 @@
       "id": 7,
       "name": "lohjml",
       "likes": 0,
-      "stockNumber": 365,
-      "sellerAlias": "jopimpi"
-    },
-    {
-      "id": 8,
-      "name": "gfrrdhytjfytfdh",
-      "likes": 0,
-      "stockNumber": 444,
-      "sellerAlias": "kj"
+      "stockNumber": 65,
+      "sellerAlias": "jopimpifdgsg"
     }
   ]
 }
